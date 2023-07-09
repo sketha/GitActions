@@ -30,7 +30,8 @@ jobs:
     - name: Check the list of files in the directory
       run: |
         cd selenium
-        mvn clean test
+        mvn clean
+        mvn test
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
